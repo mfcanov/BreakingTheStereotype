@@ -1,0 +1,34 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int num,num1;
+
+int difference(int num,int num1 ){
+  return(num-num1);
+}
+
+int product(int num, int num1){
+  return((num)*(num1));
+}
+
+int division(int num, int num1){
+  return(num/num1);
+}
+
+int remainder(int num, int num1){
+  return(num%num1);
+}
+
+int main(){
+  cout<<"This program will give you the difference,product,INTEGER division and the remainder of the INTEGER numbers you give: "<<endl;
+  cout<<"Tell me the first INTEGER number: ";
+  cin>>num;
+  cout<<"Tell me the second INTEGER number: ";
+  cin>>num1;
+  cout<<"The difference is = "<<difference(num,num1)<<endl;
+  cout<<"The product is = "<<product(num,num1)<<endl;
+  cout<<"The division is = "<<division(num,num1)<<endl;
+  cout<<"The remainder is = "<<remainder(num,num1)<<endl;
+}
